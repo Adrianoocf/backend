@@ -1,7 +1,10 @@
 // src/config/database.js
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const url = 'mongodb+srv://adrianoocf:A004198461a@clustertask.hbwte.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTask';
+//const url = 'mongodb+srv://adrianoocf:A004198461a@clustertask.hbwte.mongodb.net/?retryWrites=true&w=majority&appName=ClusterTask';
+
+const url = process.env.DATABASE_URL; // Usa a variável de ambiente
 
 mongoose.connect(url, {
     // useNewUrlParser: true,
