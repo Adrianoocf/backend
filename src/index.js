@@ -17,7 +17,7 @@ app.get('/teste', (req, res) => {
     res.send("Hello");
 });
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 3001;
 app.listen(port, '0.0.0.0', () => {
     console.log(`API online na porta ${port}`);
 });
