@@ -18,6 +18,6 @@ app.get('/teste', (req, res) => {
 });
 
 const port = process.env.PORT || 3333;
-app.listen(port, () => {
-    console.log('API online ok');
+app.listen(port, '0.0.0.0', () => {
+    console.log(`API online na porta ${port}`);
 });
